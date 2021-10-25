@@ -1,0 +1,210 @@
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    box-shadow: 1px 1px 9px -5px black;
+    background: white;
+}
+@media all and (max-width:1200px) {
+    .nav{
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+}
+.nav-menu li {
+    list-style: none;
+    margin: 0 7px;
+}
+@media all and (max-width:850px) {
+    .nav-menu{
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+    .nav-menu li{
+        margin: 7px auto;
+    }
+}
+.nav-menu li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #54536F;
+}
+.btn{
+background: #A655CC;
+color: white;
+border: none;
+border-radius: 16px;
+box-shadow: 1px 1px 9px -5px black;
+padding: 8px 12px;
+}
+.header-certy{
+    padding: 30px 80px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.header-certy-content{
+    margin-right: 100px;
+}
+.header-certy-title{
+    color:#54536F
+}
+.header-certy-text-sub{
+    color:grey;
+    font-size: 12px;
+    margin: 5px 0 ;
+    font-style: italic;
+}
+.header-certy-img{
+    position: relative;
+}
+.header-certy-img::before{
+    content: '';
+    background:#54536F;
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -2;
+right: -106px;
+top: -315px;
+}
+.header-certy-img::after{
+background: url(./images/award.svg);
+content: '';
+position: absolute;
+z-index: -1;
+width: 100%;
+height: 100%;
+background-position: top;
+top:-73px;
+left: 193px;
+background-repeat: no-repeat;
+}
+@media all and (max-width:1200px){
+.header-certy-img::before,
+.header-certy-img::after{
+    display: none;
+}
+
+.header-certy{
+    flex-direction: column;
+}
+
+.header-certy-img{
+    margin-top: 50px;
+}
+.header-certy-content{
+    margin-right: 0;
+}
+.header-certy{
+   padding: 40px 20px;
+}
+
+}
+.cpe{
+   background:#14152d;
+   display: flex;
+   align-items: center;
+   padding: 40px 80px;
+   margin-top: 60px;
+ 
+}
+.cpe-img{
+    position: relative;   /*Tova se pravi kogato iskam da pozicioniram snimka*/
+    top: 88px;
+}
+.cpe-content-title{
+    color: white;
+    margin-right: 70px;
+  
+}
+.cpe-content-text{
+    color: white;
+  
+}
+@media all and (max-width:1000px){
+    .cpe{
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    .cpe-content{
+        margin-right: 0;
+    }
+    .cpe-img{
+        top:20px;
+    }
+}
+.career{
+    margin-top: 60px;
+    display: flex;
+    padding: 40px 80px;
+    align-items: center;
+}
+.career-content{
+    margin-left: 30px;
+}
+.career-content{
+    color: #54536F;
+}
+.career-text{
+    font-size: 14px;
+}
+.career-btn{
+    border-style: solid;
+    border-width: 1px;
+border-color: violet;
+    border-radius: 16px;
+    color:violet;
+    background:white;
+    padding: 7px 12px;
+    text-transform: uppercase;
+font-weight: bold;
+}
+
+@media all and (max-width:1000px){
+    .career{
+        flex-direction: column;
+        margin-top: 30px 20px;
+    }
+    .career-img{
+        order: 2;
+        margin-top: 40px;
+    }
+    .career-content{
+        order: 1;
+    }
+}
+footer{
+    background:#14152d;
+    display: flex;
+    color: azure;
+    padding:30px 80px;
+    justify-content: space-between;
+   
+}
+.footer-title{
+    font-weight: bold;
+    color: #A655CC;
+    margin:0 0 20px 0;
+}
+.footer-item a{
+    text-decoration: none;
+    color: white;
+}
+.footer-item{
+    list-style: none;
+    margin: 8px;
+   
+}
+.footer-nav{
+    padding-left: 0;
+}
